@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---Bootstrap css link --->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!--custome css-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <section id="home">
+      <div class="circle d-none d-lg-block">
+        <img src="./img/circle.png" alt="" />
+      </div>
+      <div class="rectanglar"></div>
+      <!--Socail media-->
+      <div class="d-flex flex-column position-absolute social-media gap-4">
+        <a href="">
+          <img src="./img/social1.png" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="./img/social3.png" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="./img/be.png" alt="" srcset="" />
+        </a>
+      </div>
+      <!--navbar-->
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container-lg">
+          <!--nav brand-->
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="" srcset="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll menubar gap-4"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <button class="bg-transparent border-0 m-lg-auto m-xl-0">
+              <img src="./img/dark.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!----->
+      <div class="hero h-75">
+        <div class="container h-100">
+          <div
+            class="h-100 d-flex flex-column-reverse align-items-center pb-4 p-md-0 flex-md-row gap-2 gap-lg-0"
+          >
+            <div class="hero__content m-sm-0 mt-lg-5 pt-lg-4 mt-xl-5 lg:pt-5">
+              <div class="hero__header d-flex">
+                <img src="./img/wave.png" alt="" />
+                <h3 class="ms-3">Hi, I am Ashik Ahmed</h3>
+              </div>
+              <div class="hero__title">
+                <h1>
+                  Creative UI/UX <br />
+                  Designer <span>.</span>
+                </h1>
+              </div>
+              <div class="hero__pera my-2 lg:my-4">
+                <p>
+                  Your goal is to throw the most epic party for your friends and
+                  family? I am in! If you’re interested in having me photograph
+                  your wedding, I’d love for you to get in touch.
+                </p>
+              </div>
+              <div class="hero__button d-flex gap-3">
+                <button class="download">Download CV</button>
+                <button class="letstalk">
+                  Let's Talk
+                  <img class="ms-2" src="./img/arrow.png" alt="" srcset="" />
+                </button>
+              </div>
+            </div>
+            <div class="hero__profile">
+              <img src="./img/profile.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="pt-4 pb-2">
+      <footer>
+        <div class="container">
+          <div
+            class="fotter__header gap-2 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img src="./img/logo2.png" alt="" srcset="" />
+            <h2 class="py-2">Thanks for looking</h2>
+          </div>
+
+          <div
+            class="social__media d-flex justify-content-center align-items-center gap-4 py-3"
+          >
+            <a href="">
+              <img src="./img/social1.png" alt="" srcset="" />
+            </a>
+            <a href="">
+              <img src="./img/socail2.png" alt="" />
+            </a>
+            <a href="">
+              <img src="./img/social3.png" alt="" srcset="" />
+            </a>
+            <a href="">
+              <img src="./img/social4.png" alt="" srcset="" />
+            </a>
+            <a href="">
+              <img src="./img/social5.png" alt="" srcset="" />
+            </a>
+          </div>
+          <p class="text-center">© 2020 ALL RIGHT RESEVED</p>
+        </div>
+      </footer>
+    </section>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/695e998830.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

@@ -1,0 +1,329 @@
+$primary-color: #eff8ff;
+$secondary-color: #23262f;
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+#home {
+  background-color: $primary-color;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  .circle {
+    img {
+      position: absolute;
+      width: 1362px;
+      height: 1362px;
+      left: -557px;
+      top: -574px;
+    }
+  }
+  .rectanglar {
+    position: absolute;
+    width: 192px;
+    height: 320px;
+    right: 0;
+    background: linear-gradient(92.17deg, #2a85ff -7.42%, #2abfff 104.73%);
+  }
+  .social-media {
+    display: none;
+    right: 30px;
+    z-index: 10;
+    bottom: 50px;
+    img {
+      width: 25px;
+    }
+  }
+  nav {
+    z-index: 10;
+    .navbar-brand {
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  .hero {
+    .hero__profile {
+      img {
+        width: 189px;
+        position: absolute;
+        z-index: 10;
+        top: 61px;
+        right: 98px;
+      }
+    }
+    .hero__content {
+      margin-top: 16rem;
+      max-width: 650px;
+      z-index: 10;
+      .hero__header {
+        img {
+          width: 30px;
+          height: 30px;
+        }
+        h3 {
+          font-weight: 600;
+          margin-bottom: 0;
+          font-size: 20px;
+          line-height: 30px;
+          color: $secondary-color;
+        }
+      }
+      .hero__title {
+        h1 {
+          font-weight: 800;
+          line-height: 110%;
+          font-size: 35px;
+          margin-top: 10px;
+          color: $secondary-color;
+          span {
+            color: #2a85ff;
+          }
+        }
+      }
+      .hero__pera {
+        p {
+          padding-right: 0rem;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #828282;
+        }
+      }
+      .hero__button {
+        button {
+          border: none;
+          border-radius: 5px;
+          padding: 14px 14px;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 23px;
+        }
+        button.download {
+          background: #2a85ff;
+          color: #ffffff;
+        }
+        button.letstalk {
+          background-color: transparent;
+          border: 1px solid #23262f;
+          filter: drop-shadow(0px 4px 14px rgba(91, 56, 227, 0.2));
+        }
+      }
+    }
+  }
+
+  ul.menubar {
+    li {
+      a {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+#footer {
+  background-color: #23262f;
+  height: 377px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  .fotter__header {
+    img {
+      width: 60px;
+    }
+    h2 {
+      text-align: center;
+      color: #fff;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 130%;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: #fff;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  #home {
+    .rectanglar {
+      display: none;
+    }
+    .hero {
+      .hero__profile {
+        img {
+          width: 220px;
+          position: static;
+        }
+      }
+      .hero__content {
+        .hero__button {
+          button {
+            padding: 12px 22px;
+          }
+        }
+        .hero__header {
+          h3 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 130%;
+            color: #23262f;
+          }
+        }
+        .hero__title {
+          h1 {
+            font-size: 45px;
+            font-weight: 800;
+            line-height: 110%;
+            color: #23262f;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #home {
+    height: 100vh;
+
+    .rectanglar {
+      height: 100%;
+      z-index: 1;
+      width: 250px;
+      display: block;
+    }
+    .hero {
+      .hero__content {
+        margin-top: 0rem;
+        max-width: 425px;
+        .hero__title {
+          h1 {
+            font-size: 50px;
+          }
+        }
+        .hero__pera {
+          p {
+            padding: 0;
+            font-size: 14px;
+            font-weight: normal;
+            color: #828282;
+          }
+        }
+      }
+
+      .hero__profile {
+        img {
+          width: 300px;
+          top: unset;
+          bottom: 0;
+          right: 68px;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #home {
+    .social-media {
+      display: block;
+    }
+    .rectanglar {
+      background: linear-gradient(92.17deg, #2a85ff -7.42%, #2abfff 104.73%);
+      height: 100%;
+      width: 250px;
+      position: absolute;
+      right: 0;
+      z-index: 10;
+    }
+    .hero {
+      .hero__content {
+        max-width: 650px;
+        .hero__title {
+          h1 {
+            margin: 1rem 0;
+            font-weight: 700;
+            font-size: 60px;
+          }
+        }
+
+        .hero__pera {
+          p {
+            padding-right: 9rem;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+          }
+        }
+      }
+      .hero__profile {
+        img {
+          position: absolute;
+          right: 57px;
+          bottom: 0;
+          top: unset;
+          width: 333px;
+          z-index: 10;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #home {
+    .hero {
+      .hero__content {
+        margin-top: 5%;
+        .hero__title {
+          h1 {
+            font-size: 84px;
+            font-weight: 800;
+          }
+        }
+
+        .hero__pera {
+          p {
+            padding-right: 6rem;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #828282;
+          }
+        }
+      }
+      .hero__profile {
+        img {
+          right: 130px;
+          bottom: 0;
+          width: 400px;
+          z-index: 10;
+        }
+      }
+    }
+    .rectanglar {
+      background: linear-gradient(92.17deg, #2a85ff -7.42%, #2abfff 104.73%);
+      height: 100%;
+      width: 350px;
+      position: absolute;
+      right: 0;
+      z-index: 10;
+    }
+  }
+}
